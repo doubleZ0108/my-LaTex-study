@@ -1,0 +1,68 @@
+%-----------------------------------------------------------------------
+% Resume Template English Version
+%-----------------------------------------------------------------------
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+%-----------------------------------------------------------------------
+% CONFIGURATIONS
+%-----------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald(green), awesome-skyblue, awesome-red, awesome-pink, awesome-orange, awesome-nephritis(green), awesome-concrete(grey), awesome-darknight(bw)
+\colorlet{awesome}{awesome-skyblue}
+
+\setbool{acvSectionColorHighlight}{true}
+
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\makeatletter
+\patchcmd{\@sectioncolor}{\color}{\mdseries\color}{}{}
+\makeatother
+
+%-----------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%-----------------------------------------------------------------------
+\photo[rectangle,noedge,right]{images/icon.jpg}        % Available options: circle|rectangle,edge/noedge,left/right
+
+\name{Zhe}{Zhang}
+
+\position{Software Engineering}
+
+\address{Tongji University, Jiading Campus, Shanghai}
+
+\mobile{+86 15216805515}
+
+\email{doubleZ0108@163.com}
+
+\github{doubleZ0108}
+
+%-----------------------------------------------------------------------
+\begin{document}
+
+% header
+\makecvheader[C]
+
+% footer
+\makecvfooter
+  {\today}
+  {Zhe Zhang Resume Template}
+  {\thepage}
+
+% RESUME CONTENT
+\input{resume/education.tex}
+\input{resume/skills.tex}
+\input{resume/experience.tex}
+\input{resume/leadership_experience.tex}
+\input{resume/awards.tex}
+
+\end{document}
+%-----------------------------------------------------------------------
