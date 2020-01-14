@@ -17,6 +17,22 @@
   ```latex
   \begin{pmatrix} \end{pmatrix}
   ```
+  
+- **标题**
+
+  ```latex
+  \section{}					% 一级标题
+  \subsection{}				% 二级标题
+  \subsubsection{}		% 三级标题
+  ```
+
+- **缩进**
+
+  ```latex
+  \indent this is a text
+  ```
+
+  
 
 ------
 
@@ -26,6 +42,18 @@
 
   ```latex
   \input{resume/education.tex}
+  ```
+  
+- **目录**
+
+  ```latex
+  \tableofcontents
+  ```
+
+- **新页面**
+
+  ```latex
+  \newpage
   ```
 
 ------
@@ -61,4 +89,27 @@
 
   
 
+------
 
+## 公式
+
+- **插入公式**
+
+  ```latex
+  \begin{flalign}
+  \end{flalign}
+  ```
+
+
+
+------
+
+## 代码
+
+- matlab代码
+
+  ```latex
+  \lstinputlisting[caption={this is a caption}]{src/test.m}
+  ```
+
+  
