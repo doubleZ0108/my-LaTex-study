@@ -91,6 +91,19 @@
   \url{http://www.caac.gov.cn/XXGK/XXGK/TJSJ/201905/t20190508_196033.html}
   ```
 
+- **罗马数字**：`\romannumeral1`
+
+- **标签**:
+
+  ```latex
+  % 设置标签
+  \label{subsection:passenger_track}
+  \label{fig:figure_1}
+  
+  % 引用标签
+  \ref{subsection:passenger_track}
+  ```
+
   
 
 ------
@@ -166,6 +179,21 @@
 
 
 ## 表格
+
+```latex
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{5cm}|c|c|}
+        \hline
+        Data description & Symbol & The numerical\\
+        \hline
+        The distance from the airport to the center as the crow flies & $r$ &50\\
+        \hline
+    \end{tabular}
+    \caption{Traffic data of Shanghai}
+    \label{tab:traffic_data}
+\end{table}
+```
 
 ### 长表格(超过一页)
 

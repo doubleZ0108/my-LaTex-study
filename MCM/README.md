@@ -134,6 +134,13 @@ Begin your paper here
 
 ### 引用
 
+- **引用文献**
+
+  ```latex
+  $^{[\ref{ref:ref1}]}$
+  $^{[\ref{ref:ref3}][\ref{ref:ref4}]}$
+  ```
+
 (不太好，现凑活用)
 
 ```latex
@@ -144,6 +151,66 @@ Begin your paper here
     ] Anonymity. Shanghai taxi GPS data sets [DB/OL]. \\
 \end{enumerate}
 ```
+
+### 公式
+
+```latex
+\begin{equation}
+    e^{i\theta}=\cos\theta+i\sin\theta.
+\end{equation}
+```
+
+### 图像
+
+- **单个图像**
+
+  ```latex
+  \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.5\textwidth]{figure/figure_1.png}
+      \caption{Number of people waiting in "boarding area" - time chart}
+      \label{fig:figure_1}
+  \end{figure}
+  ```
+
+- **两个图像并排**
+
+  ```latex
+  \begin{figure}[H]
+  \subfigure{
+      \begin{minipage}[t]{0.4\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{figure/figure_9_1.png}
+      \end{minipage}
+  }
+  \subfigure{
+      \begin{minipage}[t]{0.4\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{figure/figure_9_2.png}
+      \end{minipage}
+  }
+  \caption{Model of airport queuing distance to carry passengers - operating time}
+  \end{figure}
+  ```
+
+### 表格
+
+```latex
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{5cm}|c|c|}
+        \hline
+        Data description & Symbol & The numerical\\
+        \hline
+        The distance from the airport to the center as the crow flies & $r$ &50\\
+        \hline
+    \end{tabular}
+    \caption{Traffic data of Shanghai}
+    \label{tab:traffic_data}
+\end{table}
+```
+
+
 
 
 
