@@ -132,5 +132,18 @@ Begin your paper here
 \end{center}
 ```
 
+### 引用
+
+(不太好，现凑活用)
+
+```latex
+\begin{enumerate}[[ 1]
+    \item \label{ref:ref1}
+    ] Liu junjuan, wang wei, xiao meidan. Study on traffic density and speed model in single-center city [J]. Journal of railway science and engineering,2011,8(01):113-117.
+    \item \label{ref:ref2}
+    ] Anonymity. Shanghai taxi GPS data sets [DB/OL]. \\
+\end{enumerate}
+```
+
 
 
