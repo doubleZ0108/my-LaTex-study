@@ -56,11 +56,37 @@
   \newpage
   ```
 
+
+
+## 段落
+
+- **缩进**：
+
+  - 段落自动缩进2em
+  - 段落不想缩进，在开头添加`\noindent`
+
+  ```latex
+  \usepackage{indentfirst} 
+  \setlength{\parindent}{2em}
+  ```
+
+- **标题**
+
+  ```latex
+  \section{This is section}
+  \subsection{This is subsection}
+  \subsubsection{This is subsubsection}
+  ```
+
+- **换行**：`\\`
+
+- **粗体**：`\textbf{black text}`
+
 ------
 
 ## 列表
 
-- 有序列表
+- **有序列表**
 
   ```latex
   \begin{enumerate}
@@ -69,7 +95,7 @@
   \end{enumerate}
   ```
 
-- 无序列表
+- **无序列表**
 
   ```latex
   \begin{itemize}
@@ -78,7 +104,7 @@
   \end{itemize}
   ```
 
-- 罗马数字列表
+- **罗马数字列表**
 
   ```latex
   \begin{enumerate}[label=(\roman*)]
@@ -99,8 +125,20 @@
   \begin{flalign}
   \end{flalign}
   ```
+  
+- **连等式**（对号对齐）
 
+  ```latex
+  \begin{equation}
+  \begin{aligned}
+  x &= 0 \\
+  &= 1 \\
+  &= 2
+  \end{aligned}
+  \end{equation}
+  ```
 
+  
 
 ------
 
@@ -113,3 +151,41 @@
   ```
 
   
+
+
+
+## 表格
+
+### 长表格(超过一页)
+
+```latex
+\begin{center}
+\begin{longtable}{cp{13cm}} 
+\caption[Notations]{Notations}\\
+
+\hline \hline
+\multicolumn{1}{c}{\textbf{Symbol}} & \multicolumn{1}{c}{\textbf{Definition}}\\ \hline 
+\endfirsthead
+
+\multicolumn{2}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\hline \multicolumn{1}{c}{\textbf{Symbol}} &
+\multicolumn{1}{c}{\textbf{Definition}} \\ \hline 
+\endhead
+
+\hline 
+\centering
+\multicolumn{2}{l}{{Continued on next page}} \\ \hline
+\endfoot
+
+\hline \hline
+\endlastfoot
+
+	$r$&The distance between a taxi and downtown.\\
+	...\\
+	$d$&The distance between the taxi and the airport. \\
+
+\end{longtable}
+\end{center}
+```
+
