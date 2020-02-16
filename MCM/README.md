@@ -210,7 +210,24 @@ Begin your paper here
 \end{table}
 ```
 
+- **表格中有图片**
 
+  ```latex
+  \begin{table}[H]
+      \centering
+      \begin{tabular}{|p{4cm}|p{3cm}|p{3cm}|p{2cm}|p{3cm}|}
+          \hline
+           Travel purpose & graphic\\
+           \hline
+          The movement of a position between two points for the purpose of &  \begin{minipage}{0.1\textwidth}\includegraphics{figure/table_5_figure_1.png}\end{minipage}\\ 
+          \hline
+          Movement with other behavioral goals & \begin{minipage}{0.1\textwidth}\includegraphics{figure/table_5_figure_2.png}\end{minipage}\\
+          \hline
+      \end{tabular}
+      \caption{Three types of typical walking purposes and walking characteristics}
+      \label{tab:three_type}
+  \end{table}
+  ```
 
-
+  
 
