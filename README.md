@@ -180,6 +180,15 @@
 
 ## 表格
 
+- **指定宽度并居中**
+
+  ```latex
+  \usepackage{array}
+  p{2cm}<{\centering}
+  ```
+
+  
+
 ```latex
 \begin{table}[H]
     \centering
@@ -228,3 +237,9 @@
 \end{center}
 ```
 
+
+
+## 图像
+
+- **插图中caption过长换行**：`\protect\\`
+- **强制图像标题居中**：`\usepackage[justification=centering]{caption}`

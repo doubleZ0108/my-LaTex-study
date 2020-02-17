@@ -190,6 +190,7 @@ Begin your paper here
       \end{minipage}
   }
   \caption{Model of airport queuing distance to carry passengers - operating time}
+  \label{fig:figure4}
   \end{figure}
   ```
 
@@ -198,7 +199,7 @@ Begin your paper here
 ```latex
 \begin{table}[H]
     \centering
-    \begin{tabular}{|p{5cm}|c|c|}
+    \begin{tabular}{|p{5cm}<{\centering}|c|c|}
         \hline
         Data description & Symbol & The numerical\\
         \hline
