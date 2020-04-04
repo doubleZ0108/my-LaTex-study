@@ -104,6 +104,12 @@
   \ref{subsection:passenger_track}
   ```
 
+- 长直线(\<hr\>)
+
+  ```latex
+  \noindent\rule[0.25\baselineskip]{\textwidth}{1pt}
+  ```
+
   
 
 ------
@@ -160,6 +166,13 @@
   &= 2
   \end{aligned}
   \end{equation}
+  ```
+
+- 长等号
+
+  ```latex
+  \usepackage{extarrows}
+  \xlongequal{\text{这里是上面的内容}}{\text{这里是下面的内容}}
   ```
 
   
