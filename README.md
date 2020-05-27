@@ -18,18 +18,14 @@
   \begin{pmatrix} \end{pmatrix}
   ```
   
-- **标题**
+- **行列式**
 
   ```latex
-  \section{}					% 一级标题
-  \subsection{}				% 二级标题
-  \subsubsection{}		% 三级标题
-  ```
-
-- **缩进**
-
-  ```latex
-  \indent this is a text
+  \left|\begin{array}{cccc} 
+    i & j & k \\
+    0 & 0 & 1 \\
+    1 & -3 & 4
+  \end{array}\right|
   ```
 
   
@@ -55,8 +51,22 @@
   ```latex
   \newpage
   ```
+  
+- **标题**
 
+  ```latex
+  \section{}					% 一级标题
+  \subsection{}				% 二级标题
+  \subsubsection{}		% 三级标题
+  ```
 
+- **缩进**
+
+  ```latex
+  \indent this is a text
+  ```
+
+  
 
 ## 段落
 
@@ -185,7 +195,18 @@
   \xlongequal{\text{这里是上面的内容}}{\text{这里是下面的内容}}
   ```
 
-  
+- **方程组**
+
+  ```latex
+  \left\{
+  \begin{array}{rl}
+      0x+0y+z&=0 \\
+      x-3y+4z&=0
+  \end{array}
+  \right.
+  ```
+
+- 公式不标号：`\nonumber`
 
 ------
 
